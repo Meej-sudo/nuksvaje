@@ -1,0 +1,35 @@
+Priprava za Pyenv
+sudo apt update; sudo apt install -y make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+curl https://pyenv.run | bash
+echo -e '\n# Pyenv configuration' >> ~/.bashrc
+echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+source ~/.bashrc
+Pyenv ukazi
+Pyenv verions --- nameščene verzije
+Pyenv install <verzija> --- namestitev verzije
+Pyenv local <verzija> --- lokalna verzija
+Pyenv global <verzija> --- globalna verzija
+Python -m venv venv --- ustvarimo venv
+Source vevn/bin/activate --- zaženemo virtualno okolje
+Deactivate – izključimo okolje
+Requirements datoteka
+fastapi
+uvicorn[standard]
+sqlalchemy>=2.0
+aiosqlite
+pip install -r requirements.txt
+Git
+git config --global user.name "Your Name"
+git config --global user.email you@example.com
+ls ~/.ssh – pregled ssh ključev
+ssh-keygen -t rsa -C »email« ---- ustvarimo ssh ključe
+cat ~/.ssh/id_rsa.pub – izpišemo naš javni ključ
+git init
+git remote add origin https://github.com/your-username/your-repo.git (https)ali git remote set-url origin git@github.com:your-username/your-repo.git(ssh)
+git add .
+git commit -m "Initial commit"
+git push -u origin master
