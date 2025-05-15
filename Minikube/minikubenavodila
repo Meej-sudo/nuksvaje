@@ -1,0 +1,53 @@
+Kubernetes Vaja
+Inštalacija Minikube klienta
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+Zagon minikube
+
+Sudo minikube start
+
+Kubernetes manifest
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:alpine
+        ports:
+        - containerPort: 80
+
+Apply deployment
+kubectl apply -f nginx-deployment.yaml
+kubectl get deployments
+kubectl get pods -l app=nginx
+kubectl expose deployment nginx-deployment --port=80 --type=NodePort
+kubectl get service nginx-deployment
+minikube service nginx-deployment
+Skaliranje
+
+kubectl scale deployment nginx-deployment --replicas=5
+kubectl get pods
+Brisanje podov
+kubectl delete pod <nginx-pod-name>
+kubectl delete service nginx-deployment
+kubectl delete deployment nginx-deployment
+Opisi podov
+
+kubectl get pods
+kubectl describe pod <pod-name>
+kubectl logs <pod-name>
+kubectl exec -it <pod-name> -- sh
+kubectl exec -it <pod-name> -- curl <url>
+
