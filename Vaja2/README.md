@@ -49,4 +49,4 @@ app = VersionedFastAPI(app, version_format='{major}', prefix_format='/v{major}')
 ```
 Torej bodo naši API rout-i sedaj /v1/items/
 
-
+⬇️ [CRUD](crud.md)
