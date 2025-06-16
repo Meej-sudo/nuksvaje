@@ -20,3 +20,5 @@ Po podobnem principu lahko pridobimo samo en zapis v podatkovni bazi.
           if not item: # Preverimo ali obstaja Item
               raise HTTPException(status_code=404, detail="Item not found")
           return item # Vrnemo iskani Item
+
+⬇️ [FrontEnd](frontend.md)
