@@ -45,3 +45,4 @@ git remote set-url origin git@github.com:your-username/your-repo.git # Push prek
 git push -u origin main # Posredovanje sprememb na repozitorij na Github platformi
 git pull # Prevzem spremebn iz repozitorija na Githubu
 ```
+⬇️ [Pyenv](README.md)                ⬇️ [Items app](items_app.md)
