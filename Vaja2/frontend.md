@@ -68,6 +68,9 @@ Nato za vsako API kočno točko definiramo svojo Javascript funkcijo, ki bo klic
         `;
         list.appendChild(li);
       });
+```
+
+⬇️ [Verzioniranje](README.md)
     }
 ```
 
