@@ -16,13 +16,13 @@ Aplikacija bo narejena iz treh ločenih .py datotek
 - database.py # Inicializira podatkovno bazo
 - models.py # Opisuje strukturo podatkovne baze
 
----
+
 # Web routi
 
 Za postavite spletnega strežnika bomo uporabili knjižnico **FastAPI**. Posamezno CRUD metodo bomo implementerali kot ločen API klic z ustrezno HTTP metodo.
 Vsak API klic je sestavljen iz http metode, poti, odgovora. Nov API klic definiramo z dekoratorjem **@**.
 
----
+
 
 ## Primer API klica
 ```python
@@ -30,9 +30,9 @@ Vsak API klic je sestavljen iz http metode, poti, odgovora. Nov API klic definir
 @app.get("/items/{item_id}", response_model=ItemRead) # Celotna pot se glasi http://127.0.0.1/items/<Item, ki se nahaj v db>
 ```
 
-Vsak API klic mora biti pravtako opremljen z funkcijo, ki se kliče ko uporabnik obišče API pot.
+Vsak API klic mora biti prav tako opremljen z funkcijo, ki se kliče ko uporabnik obišče API pot.
 
----
+
 
 ## Implementacija CRUD metod
 
@@ -64,4 +64,4 @@ class Item(Base):
     description = Column(String) # Opis
 ```
 
- ⬇️ [Github(github.md)
+ ⬇️ [Github](github.md)
