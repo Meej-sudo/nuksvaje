@@ -35,3 +35,10 @@ Vsak API klic mora biti pravtako opremljen z funkcijo, ki se kliče ko uporabnik
 ## Implementacija CRUD metod
 
 CRUD je kratica za implementacijo osnovnih funkcij ustvarjanja (Create), branja (Read), posodabljanja (Update) ter brisanja (Delete) spletnih virov. 
+```python
+@app.post("/items/", response_model=ItemRead) # Http metoda POST
+@app.get("/items/", response_model=List[ItemRead]) # Http metoda GET
+@app.put("/items/{item_id}", response_model=ItemRead) # Http metoda UPDATE
+@app.delete("/items/{item_id}") # Http metoda DELETE
+```
+V praksi lahko večino CRUD funkcijo implementiramo samo z funkcijo POST, saj POST omogoča pošiljanje podatkov proti spletnemu strežniku kar omogoča posodabljanje, ustvarjanje ter brisanje virov. Po standardu se mora HTTP metoda ujemati z akcijo, ki jo želimo izvesti nad virom.
