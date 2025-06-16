@@ -44,4 +44,4 @@ numpy
 pip install -r requirements.txx # Namestitev vseh knjižnic znotraj datoteke
 ```
 
-
+⬇️ [Github](github.md)
