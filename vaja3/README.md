@@ -34,6 +34,24 @@ Docker je odprtokodna platforma, ki omogoča avtomatizirano ustvarjanje, razmest
 
 Docker lahko namestimo na poljubno platformo (Windows, Linux, Mac). Navodila za namestitev dockerja so v **docker** datoteki na githubu.
 
+sudo apt-get update
+
+sudo apt-get -y install \
+apt-transport-https \
+ca-certificates \
+curl \
+gnupg-agent \
+software-properties-common
+
+sudo mkdir -m 0755 -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+sudo systemctl enable docker
+
 
 ## Namestitev Docker-Composa
 
