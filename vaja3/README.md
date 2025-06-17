@@ -52,7 +52,9 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 sudo systemctl enable docker
 ```
-#  Docker Compos
+
+---
+#  Docker Compose
 Docker Compose je orodje, ki omogoča definiranje in upravljanje več vsebnikov (*containers*) kot enotnega sistema. Konfiguracija je zapisana v datoteki `docker-compose.yml`, kjer določimo vse storitve, mreže in volume, ki jih aplikacija potrebuje.
 ## Razlika med Dockerjem in Docker Compose:
 - **Docker** omogoča zagon posameznih vsebnikov z ukazom `docker run`. Primeren je za enostavne primere ali posamezne storitve.
@@ -68,4 +70,5 @@ Docker Compose je orodje, ki omogoča definiranje in upravljanje več vsebnikov 
 
 
 ## Namestitev Docker-Composa
-
+printf '\n\n\nInstalling docker-compose: \n'
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
