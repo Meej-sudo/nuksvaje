@@ -19,3 +19,5 @@ CMD ["echo", "Hello from my custom Docker image!"] # Izveden ukaz
 Container moramo nato ustvariti z ```bash docker build -t <ime>``` ter ga zaženemo z ```bash docker run <ime>```.
 
 Do containerja lahko dostop tudi z ukazom ```docker exec -it <ime> /bin/bash```
+
+⬇️ [Docker compose](docker_compose.md)
