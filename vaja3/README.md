@@ -33,7 +33,7 @@ Docker je odprtokodna platforma, ki omogoča avtomatizirano ustvarjanje, razmest
 ## Namestitev Dockerja
 
 Docker lahko namestimo na poljubno platformo (Windows, Linux, Mac). Navodila za namestitev dockerja so v **docker** datoteki na githubu.
-
+```bash
 sudo apt-get update
 
 sudo apt-get -y install \
@@ -51,7 +51,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 sudo systemctl enable docker
-
+```
 
 ## Namestitev Docker-Composa
 
