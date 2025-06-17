@@ -33,3 +33,5 @@ CONTAINER ID   IMAGE                                 COMMAND                  CR
 ```
 Vsak docker container je sestavljen iz ID, imena imaga, ukaza ki se je izvedel ko se je container postavil, čas stvarjenja, status, odprti porti ter ime (privzeto se generirajo naključna imena).
 Z ukazom ```bash docker inspect <ime containerja>``` si lahko ogledamo detajle container. Z ```bash docker inspect image <id imaga>``` pa si lahko ogledamo detajle imaga.
+
+⬇️ [Namestitev Docker Imaga](docker_image.md)
