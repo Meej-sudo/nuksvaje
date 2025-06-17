@@ -31,3 +31,4 @@ d2ec03d7cbb9   nginx     "/docker-entrypoint.…"   30 seconds ago   Up 29 secon
 Containerje lahko nato nadziramo z ukazi ```bash docker ps``` ```bash docker logs```. Pogosto želimo log datoteke tudi prekopirati v lokalno datoteko na napravi. To lahko naredimo z ukazom ```bash docker logs > ime.txt```
 Conatiner lahko ustavimo, zaženemo ali ponovno zaženemo z ukazom ```bash docker stop/start/restart <ime>```
 
+⬇️ [Dockerfile](docker_file.md)
