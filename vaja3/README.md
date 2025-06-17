@@ -24,7 +24,7 @@ Mikrostoritve so arhitekturni vzorec, kjer je aplikacija razdeljena na manjše, 
 # Docker
 Docker je odprtokodna platforma, ki omogoča avtomatizirano ustvarjanje, razmestitev in zagon aplikacij v vsebnikih (*containers*). Vsebnik je lahek, prenosljiv paket, ki vsebuje vse, kar aplikacija potrebuje za delovanje – kodo, knjižnice, odvisnosti in konfiguracije.
 
-### Prednosti Dockerja:
+## Prednosti Dockerja:
 - **Prenosljivost**: Aplikacije delujejo enako v vseh okoljih (razvoj, test, produkcija).
 - **Izolacija**: Vsak vsebnik deluje ločeno, kar zmanjšuje konflikte med komponentami.
 - **Hitrost**: Vsebniško okolje se zažene bistveno hitreje kot tradicionalni virtualni strežniki.
@@ -52,6 +52,20 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 sudo systemctl enable docker
 ```
+#  Docker Compos
+Docker Compose je orodje, ki omogoča definiranje in upravljanje več vsebnikov (*containers*) kot enotnega sistema. Konfiguracija je zapisana v datoteki `docker-compose.yml`, kjer določimo vse storitve, mreže in volume, ki jih aplikacija potrebuje.
+## Razlika med Dockerjem in Docker Compose:
+- **Docker** omogoča zagon posameznih vsebnikov z ukazom `docker run`. Primeren je za enostavne primere ali posamezne storitve.
+- **Docker Compose** pa je namenjen kompleksnejšim okoljem, kjer je potrebno hkrati zagnati več povezanih vsebnikov (npr. aplikacija + baza + predpomnilnik). Z enim ukazom `docker-compose up` se zažene celoten sistem.
+
+## Prednosti Docker Compose:
+- Centralizirana konfiguracija vseh storitev
+- Lažje testiranje in razvoj kompleksnih aplikacij
+- Podpora za več okolij (npr. razvojno, produkcijsko)
+
+## Namestitev Docker Composa
+```bash
+
 
 ## Namestitev Docker-Composa
 
