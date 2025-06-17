@@ -72,3 +72,6 @@ Docker Compose je orodje, ki omogoča definiranje in upravljanje več vsebnikov 
 ## Namestitev Docker-Composa
 printf '\n\n\nInstalling docker-compose: \n'
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+
+⬇️ [Osnove Dockerja](docker.md)
