@@ -48,4 +48,5 @@ Najbolj razširjeno orodje za orkestracijo je **Kubernetes**.
 - **Load balancing**: razporeja promet med več replikami storitve.
 - **Declarative config**: stanje sistema je opisano z YAML datotekami.
 
----
+
+⬇️ [Minikube in kubectl](minikube.md)
