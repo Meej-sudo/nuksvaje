@@ -37,3 +37,5 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 4. Kopirali bomo requirements.txt ter z pip-om namestili vse potrebne python knjižnice.
 5. Izpostavili bomo port 8000 na katerem bo aplikacija dosegljiva.
 6. izvedli bomo ukaz ki zažene uvicorn strežnik.
+
+⬇️ [Compose Aplikacije](app_compose.md)
