@@ -31,3 +31,5 @@ volumes:
   postgres_data:
 ```
 V drugem delu našega composa uporabimo image postres:14 da iz interneta naložimo image postgres baze.
+
+⬇️ [Združitev compose segmentov](app_compose_2.md)
