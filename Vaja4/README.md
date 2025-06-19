@@ -1,7 +1,7 @@
 # Vaja 4
 
-Namen vaje je nadgradnja vaje 3 tako, da dokeriziramo aplikacija iz prve in druge laboratorijske vaje
-Ko želimo zgraditi container svoje apliakcije se je potrebno vprašati naslednje stvari.
+Namen vaje je nadgradnja vaje 3 tako, da dokeriziramo aplikacija iz prve in druge laboratorijske vaje.
+Ko želimo zgraditi container svoje aplikacije se je potrebno vprašati naslednje stvari.
 - Kateri image bomo vzeli kot osnovo.
 - Katere direktorije potrebujemo znotraj containerja
 - Katere datoteko moramo prekopirati v container
