@@ -25,9 +25,9 @@ Na Linux/macOS sistemih imaš že nameščen "sistemski" Python, ki ga uporablja
 pyenv install <verzija>         # Namesti Python 3.11.4
 pyenv global <verzija>          # Uporabi to verzijo globalno
 pyenv local <verzija>           # Uporabi to verzijo v trenutnem projektu (ustvari .python-version datoteko)
-pyenv -m venv venv              # Ustvarimo virtualno okolje v direktoriju
-pyenv source venv/bin/activate  # Zaženemo virtualno python okolje
-pyenc deactivate                # Izključimo virtualno python okolje
+python -m venv venv              # Ustvarimo virtualno okolje v direktoriju
+source venv/bin/activate  # Zaženemo virtualno python okolje
+pyenv deactivate                # Izključimo virtualno python okolje
 ```
 
 # Requirements.txt
