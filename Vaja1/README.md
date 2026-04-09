@@ -34,10 +34,11 @@ pyenc deactivate                # Izključimo virtualno python okolje
 requirements.txt je tekstovna datoteka, ki v Python projektih seznamuje vse potrebne knjižnice (pakete), ki jih projekt potrebuje za pravilno delovanje. Namesto ročne inštalacije vsakega paketa posebej, lahko vse pakete inštaliramo v enem koraku z uporabo requirements.txt datoteke. Na ta način lahko tudi drugi razvijalci reproducirajo vaš projekt brez napak zaradi manjkajočih odvisnosti.
 ## Primer requirements.txt
 ``` txt
-flask==2.3.2
-requests>=2.31.0
-pandas~=2.2
-numpy
+fastapi
+uvicorn
+sqlalchemy
+aiosqlite
+pydantic
 ```
 ## Inštalacija projektov iz requirements.txt
 ``` bash
