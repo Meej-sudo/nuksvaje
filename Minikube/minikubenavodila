@@ -1,11 +1,11 @@
 Kubernetes Vaja
 Inštalacija Minikube klienta
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install minikube-linux-amd64 /usr/local/bin/minikube
-
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+sudo dpkg -i minikube_latest_amd64.deb
+sudo snap install kubectl --classic
 Zagon minikube
 
-Sudo minikube start
+minikube start
 
 Kubernetes manifest
 apiVersion: apps/v1
